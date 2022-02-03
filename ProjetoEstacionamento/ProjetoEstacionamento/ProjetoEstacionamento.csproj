@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C9A1842E-1B25-403A-9197-7EE966E46CA3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProjetoEstacionamento</RootNamespace>
+    <AssemblyName>ProjetoEstacionamento</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Frm_ApagarVeiculoDeCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ApagarVeiculoDeCliente.Designer.cs">
+      <DependentUpon>Frm_ApagarVeiculoDeCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Buscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Buscar.Designer.cs">
+      <DependentUpon>Frm_Buscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_CadastroCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_CadastroCliente.Designer.cs">
+      <DependentUpon>Frm_CadastroCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Entrada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Entrada.Designer.cs">
+      <DependentUpon>Frm_Entrada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Login.Designer.cs">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Principal.Designer.cs">
+      <DependentUpon>Frm_Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Questao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Questao.Designer.cs">
+      <DependentUpon>Frm_Questao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Registros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Registros.Designer.cs">
+      <DependentUpon>Frm_Registros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Saida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Saida.Designer.cs">
+      <DependentUpon>Frm_Saida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Sobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Sobre.Designer.cs">
+      <DependentUpon>Frm_Sobre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Teste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Teste.Designer.cs">
+      <DependentUpon>Frm_Teste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_TipoCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_TipoCliente.Designer.cs">
+      <DependentUpon>Frm_TipoCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProjetoEstacionamentoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetoEstacionamentoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frm_ApagarVeiculoDeCliente.resx">
+      <DependentUpon>Frm_ApagarVeiculoDeCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Buscar.resx">
+      <DependentUpon>Frm_Buscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_CadastroCliente.resx">
+      <DependentUpon>Frm_CadastroCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Entrada.resx">
+      <DependentUpon>Frm_Entrada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Login.resx">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Principal.resx">
+      <DependentUpon>Frm_Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Questao.resx">
+      <DependentUpon>Frm_Questao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Registros.resx">
+      <DependentUpon>Frm_Registros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Saida.resx">
+      <DependentUpon>Frm_Saida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Sobre.resx">
+      <DependentUpon>Frm_Sobre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Teste.resx">
+      <DependentUpon>Frm_Teste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_TipoCliente.resx">
+      <DependentUpon>Frm_TipoCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="ProjetoEstacionamentoDataSet.xsc">
+      <DependentUpon>ProjetoEstacionamentoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetoEstacionamentoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetoEstacionamentoDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetoEstacionamentoDataSet.xss">
+      <DependentUpon>ProjetoEstacionamentoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Formularios\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProjetoEstacionamentoBliblioteca\ProjetoEstacionamentoBliblioteca.csproj">
+      <Project>{a2f89b49-c79c-4716-84d3-1d9a5d970f52}</Project>
+      <Name>ProjetoEstacionamentoBliblioteca</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
