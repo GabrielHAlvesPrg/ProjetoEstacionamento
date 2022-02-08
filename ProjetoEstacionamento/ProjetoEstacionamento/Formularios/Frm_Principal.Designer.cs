@@ -32,17 +32,17 @@ namespace ProjetoEstacionamento
             this.components = new System.ComponentModel.Container();
             this.Mnu_Principal = new System.Windows.Forms.MenuStrip();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loginToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ConectarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.DesconectarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.funcionariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relatoriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Btn_Entrada = new System.Windows.Forms.Button();
-            this.Btn_Sainda = new System.Windows.Forms.Button();
+            this.Btn_Saida = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.Lbl_Hora = new System.Windows.Forms.Label();
-            this.Lbl_Registro = new System.Windows.Forms.Button();
+            this.Btn_Registro = new System.Windows.Forms.Button();
             this.Grp_TabelaPreços = new System.Windows.Forms.GroupBox();
             this.Lbl_precoMensal = new System.Windows.Forms.Label();
             this.Lbl_precoDiaria = new System.Windows.Forms.Label();
@@ -66,11 +66,11 @@ namespace ProjetoEstacionamento
             this.projetoEstacionamentoDataSet = new ProjetoEstacionamento.ProjetoEstacionamentoDataSet();
             this.tableAdapterManager = new ProjetoEstacionamento.ProjetoEstacionamentoDataSetTableAdapters.TableAdapterManager();
             this.Dg_TodosEstacionados = new System.Windows.Forms.DataGridView();
-            this.Observacao = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Horario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Modelo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Placa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Placa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Modelo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Horario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Observacao = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Mnu_Principal.SuspendLayout();
             this.Grp_TabelaPreços.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tb_EstacionadoBindingSource)).BeginInit();
@@ -93,30 +93,31 @@ namespace ProjetoEstacionamento
             // loginToolStripMenuItem
             // 
             this.loginToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.loginToolStripMenuItem1,
-            this.logoutToolStripMenuItem,
+            this.ConectarToolStripMenuItem1,
+            this.DesconectarToolStripMenuItem,
             this.funcionariosToolStripMenuItem});
             this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
             this.loginToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.loginToolStripMenuItem.Text = "Sistema";
             // 
-            // loginToolStripMenuItem1
+            // ConectarToolStripMenuItem1
             // 
-            this.loginToolStripMenuItem1.Name = "loginToolStripMenuItem1";
-            this.loginToolStripMenuItem1.Size = new System.Drawing.Size(142, 22);
-            this.loginToolStripMenuItem1.Text = "Login";
-            this.loginToolStripMenuItem1.Click += new System.EventHandler(this.loginToolStripMenuItem1_Click);
+            this.ConectarToolStripMenuItem1.Name = "ConectarToolStripMenuItem1";
+            this.ConectarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.ConectarToolStripMenuItem1.Text = "Conectar";
+            this.ConectarToolStripMenuItem1.Click += new System.EventHandler(this.ConectarToolStripMenuItem1_Click);
             // 
-            // logoutToolStripMenuItem
+            // DesconectarToolStripMenuItem
             // 
-            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
-            this.logoutToolStripMenuItem.Text = "Logout";
+            this.DesconectarToolStripMenuItem.Name = "DesconectarToolStripMenuItem";
+            this.DesconectarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.DesconectarToolStripMenuItem.Text = "Desconectar";
+            this.DesconectarToolStripMenuItem.Click += new System.EventHandler(this.DesconectarToolStripMenuItem_Click);
             // 
             // funcionariosToolStripMenuItem
             // 
             this.funcionariosToolStripMenuItem.Name = "funcionariosToolStripMenuItem";
-            this.funcionariosToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.funcionariosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.funcionariosToolStripMenuItem.Text = "Funcionarios";
             // 
             // ajudaToolStripMenuItem
@@ -151,17 +152,17 @@ namespace ProjetoEstacionamento
             this.Btn_Entrada.UseVisualStyleBackColor = false;
             this.Btn_Entrada.Click += new System.EventHandler(this.Btn_Entrada_Click);
             // 
-            // Btn_Sainda
+            // Btn_Saida
             // 
-            this.Btn_Sainda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.Btn_Sainda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Sainda.Location = new System.Drawing.Point(599, 485);
-            this.Btn_Sainda.Name = "Btn_Sainda";
-            this.Btn_Sainda.Size = new System.Drawing.Size(173, 64);
-            this.Btn_Sainda.TabIndex = 2;
-            this.Btn_Sainda.Text = "Saida";
-            this.Btn_Sainda.UseVisualStyleBackColor = false;
-            this.Btn_Sainda.Click += new System.EventHandler(this.Btn_Sainda_Click);
+            this.Btn_Saida.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Btn_Saida.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Saida.Location = new System.Drawing.Point(599, 485);
+            this.Btn_Saida.Name = "Btn_Saida";
+            this.Btn_Saida.Size = new System.Drawing.Size(173, 64);
+            this.Btn_Saida.TabIndex = 2;
+            this.Btn_Saida.Text = "Saida";
+            this.Btn_Saida.UseVisualStyleBackColor = false;
+            this.Btn_Saida.Click += new System.EventHandler(this.Btn_Saida_Click);
             // 
             // dateTimePicker1
             // 
@@ -182,17 +183,17 @@ namespace ProjetoEstacionamento
             this.Lbl_Hora.TabIndex = 6;
             this.Lbl_Hora.Text = "DateTime.Now.ToString()";
             // 
-            // Lbl_Registro
+            // Btn_Registro
             // 
-            this.Lbl_Registro.BackColor = System.Drawing.SystemColors.Control;
-            this.Lbl_Registro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_Registro.Location = new System.Drawing.Point(191, 485);
-            this.Lbl_Registro.Name = "Lbl_Registro";
-            this.Lbl_Registro.Size = new System.Drawing.Size(402, 64);
-            this.Lbl_Registro.TabIndex = 7;
-            this.Lbl_Registro.Text = "Registro";
-            this.Lbl_Registro.UseVisualStyleBackColor = false;
-            this.Lbl_Registro.Click += new System.EventHandler(this.Lbl_Registro_Click);
+            this.Btn_Registro.BackColor = System.Drawing.SystemColors.Control;
+            this.Btn_Registro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Registro.Location = new System.Drawing.Point(191, 485);
+            this.Btn_Registro.Name = "Btn_Registro";
+            this.Btn_Registro.Size = new System.Drawing.Size(402, 64);
+            this.Btn_Registro.TabIndex = 7;
+            this.Btn_Registro.Text = "Registro";
+            this.Btn_Registro.UseVisualStyleBackColor = false;
+            this.Btn_Registro.Click += new System.EventHandler(this.Btn_Registro_Click);
             // 
             // Grp_TabelaPreços
             // 
@@ -421,26 +422,12 @@ namespace ProjetoEstacionamento
             this.Dg_TodosEstacionados.TabIndex = 9;
             this.Dg_TodosEstacionados.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
-            // Observacao
+            // Id
             // 
-            this.Observacao.HeaderText = "Observação";
-            this.Observacao.Name = "Observacao";
-            this.Observacao.ReadOnly = true;
-            this.Observacao.Width = 247;
-            // 
-            // Horario
-            // 
-            this.Horario.HeaderText = "Horário";
-            this.Horario.Name = "Horario";
-            this.Horario.ReadOnly = true;
-            this.Horario.Width = 60;
-            // 
-            // Modelo
-            // 
-            this.Modelo.HeaderText = "Modelo";
-            this.Modelo.Name = "Modelo";
-            this.Modelo.ReadOnly = true;
-            this.Modelo.Width = 130;
+            this.Id.HeaderText = "IdCliente";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Width = 70;
             // 
             // Placa
             // 
@@ -449,12 +436,26 @@ namespace ProjetoEstacionamento
             this.Placa.ReadOnly = true;
             this.Placa.Width = 70;
             // 
-            // Id
+            // Modelo
             // 
-            this.Id.HeaderText = "IdCliente";
-            this.Id.Name = "Id";
-            this.Id.ReadOnly = true;
-            this.Id.Width = 70;
+            this.Modelo.HeaderText = "Modelo";
+            this.Modelo.Name = "Modelo";
+            this.Modelo.ReadOnly = true;
+            this.Modelo.Width = 130;
+            // 
+            // Horario
+            // 
+            this.Horario.HeaderText = "Horário";
+            this.Horario.Name = "Horario";
+            this.Horario.ReadOnly = true;
+            this.Horario.Width = 60;
+            // 
+            // Observacao
+            // 
+            this.Observacao.HeaderText = "Observação";
+            this.Observacao.Name = "Observacao";
+            this.Observacao.ReadOnly = true;
+            this.Observacao.Width = 247;
             // 
             // Frm_Principal
             // 
@@ -464,10 +465,10 @@ namespace ProjetoEstacionamento
             this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.Grp_TabelaPreços);
             this.Controls.Add(this.Dg_TodosEstacionados);
-            this.Controls.Add(this.Lbl_Registro);
+            this.Controls.Add(this.Btn_Registro);
             this.Controls.Add(this.Lbl_Hora);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.Btn_Sainda);
+            this.Controls.Add(this.Btn_Saida);
             this.Controls.Add(this.Btn_Entrada);
             this.Controls.Add(this.Mnu_Principal);
             this.MainMenuStrip = this.Mnu_Principal;
@@ -490,16 +491,16 @@ namespace ProjetoEstacionamento
 
         private System.Windows.Forms.MenuStrip Mnu_Principal;
         private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem DesconectarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ConectarToolStripMenuItem1;
         private System.Windows.Forms.Button Btn_Entrada;
-        private System.Windows.Forms.Button Btn_Sainda;
+        private System.Windows.Forms.Button Btn_Saida;
         private System.Windows.Forms.ToolStripMenuItem ajudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem relatoriosToolStripMenuItem;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label Lbl_Hora;
-        private System.Windows.Forms.Button Lbl_Registro;
+        private System.Windows.Forms.Button Btn_Registro;
         private System.Windows.Forms.ToolStripMenuItem funcionariosToolStripMenuItem;
         private ProjetoEstacionamentoDataSet projetoEstacionamentoDataSet;
         private System.Windows.Forms.BindingSource tb_EstacionadoBindingSource;

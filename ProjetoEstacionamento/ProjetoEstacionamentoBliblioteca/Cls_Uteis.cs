@@ -11,6 +11,15 @@ namespace ProjetoEstacionamentoBliblioteca
     public class Cls_Uteis
     {
 
+        public static bool validaSenhaLogin(string senha)
+        {
+            if (senha == "projeto")
+            {
+                return true;
+            }
+            return false;
+        }
+
 
         public static string GeraJSONCEP(string CEP) // função que passa o CEP
         {

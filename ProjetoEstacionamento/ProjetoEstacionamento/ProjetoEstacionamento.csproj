@@ -48,76 +48,76 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Frm_ApagarVeiculoDeCliente.cs">
+    <Compile Include="Formularios\Frm_ApagarVeiculoDeCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_ApagarVeiculoDeCliente.Designer.cs">
+    <Compile Include="Formularios\Frm_ApagarVeiculoDeCliente.Designer.cs">
       <DependentUpon>Frm_ApagarVeiculoDeCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Buscar.cs">
+    <Compile Include="Formularios\Frm_Buscar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_Buscar.Designer.cs">
+    <Compile Include="Formularios\Frm_Buscar.Designer.cs">
       <DependentUpon>Frm_Buscar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm_CadastroCliente.cs">
+    <Compile Include="Formularios\Frm_CadastroCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_CadastroCliente.Designer.cs">
+    <Compile Include="Formularios\Frm_CadastroCliente.Designer.cs">
       <DependentUpon>Frm_CadastroCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Entrada.cs">
+    <Compile Include="Formularios\Frm_Entrada.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_Entrada.Designer.cs">
+    <Compile Include="Formularios\Frm_Entrada.Designer.cs">
       <DependentUpon>Frm_Entrada.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Login.cs">
+    <Compile Include="Formularios\Frm_Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_Login.Designer.cs">
+    <Compile Include="Formularios\Frm_Login.Designer.cs">
       <DependentUpon>Frm_Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Principal.cs">
+    <Compile Include="Formularios\Frm_Principal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_Principal.Designer.cs">
+    <Compile Include="Formularios\Frm_Principal.Designer.cs">
       <DependentUpon>Frm_Principal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Questao.cs">
+    <Compile Include="Formularios\Frm_Questao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_Questao.Designer.cs">
+    <Compile Include="Formularios\Frm_Questao.Designer.cs">
       <DependentUpon>Frm_Questao.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Registros.cs">
+    <Compile Include="Formularios\Frm_Registros.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_Registros.Designer.cs">
+    <Compile Include="Formularios\Frm_Registros.Designer.cs">
       <DependentUpon>Frm_Registros.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Saida.cs">
+    <Compile Include="Formularios\Frm_Saida.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_Saida.Designer.cs">
+    <Compile Include="Formularios\Frm_Saida.Designer.cs">
       <DependentUpon>Frm_Saida.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Sobre.cs">
+    <Compile Include="Formularios\Frm_Sobre.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_Sobre.Designer.cs">
+    <Compile Include="Formularios\Frm_Sobre.Designer.cs">
       <DependentUpon>Frm_Sobre.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Teste.cs">
+    <Compile Include="Formularios\Frm_Teste.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_Teste.Designer.cs">
+    <Compile Include="Formularios\Frm_Teste.Designer.cs">
       <DependentUpon>Frm_Teste.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm_TipoCliente.cs">
+    <Compile Include="Formularios\Frm_TipoCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_TipoCliente.Designer.cs">
+    <Compile Include="Formularios\Frm_TipoCliente.Designer.cs">
       <DependentUpon>Frm_TipoCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -127,40 +127,40 @@
       <DependentUpon>ProjetoEstacionamentoDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Frm_ApagarVeiculoDeCliente.resx">
+    <EmbeddedResource Include="Formularios\Frm_ApagarVeiculoDeCliente.resx">
       <DependentUpon>Frm_ApagarVeiculoDeCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_Buscar.resx">
+    <EmbeddedResource Include="Formularios\Frm_Buscar.resx">
       <DependentUpon>Frm_Buscar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_CadastroCliente.resx">
+    <EmbeddedResource Include="Formularios\Frm_CadastroCliente.resx">
       <DependentUpon>Frm_CadastroCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_Entrada.resx">
+    <EmbeddedResource Include="Formularios\Frm_Entrada.resx">
       <DependentUpon>Frm_Entrada.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_Login.resx">
+    <EmbeddedResource Include="Formularios\Frm_Login.resx">
       <DependentUpon>Frm_Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_Principal.resx">
+    <EmbeddedResource Include="Formularios\Frm_Principal.resx">
       <DependentUpon>Frm_Principal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_Questao.resx">
+    <EmbeddedResource Include="Formularios\Frm_Questao.resx">
       <DependentUpon>Frm_Questao.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_Registros.resx">
+    <EmbeddedResource Include="Formularios\Frm_Registros.resx">
       <DependentUpon>Frm_Registros.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_Saida.resx">
+    <EmbeddedResource Include="Formularios\Frm_Saida.resx">
       <DependentUpon>Frm_Saida.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_Sobre.resx">
+    <EmbeddedResource Include="Formularios\Frm_Sobre.resx">
       <DependentUpon>Frm_Sobre.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_Teste.resx">
+    <EmbeddedResource Include="Formularios\Frm_Teste.resx">
       <DependentUpon>Frm_Teste.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_TipoCliente.resx">
+    <EmbeddedResource Include="Formularios\Frm_TipoCliente.resx">
       <DependentUpon>Frm_TipoCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -171,6 +171,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="ProjetoEstacionamentoDataSet.xsc">
       <DependentUpon>ProjetoEstacionamentoDataSet.xsd</DependentUpon>
@@ -196,14 +197,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Formularios\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\ProjetoEstacionamentoBliblioteca\ProjetoEstacionamentoBliblioteca.csproj">
       <Project>{a2f89b49-c79c-4716-84d3-1d9a5d970f52}</Project>
       <Name>ProjetoEstacionamentoBliblioteca</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Imagem\arquivo-de-documento %281%29.png" />
+    <Content Include="Imagem\key.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

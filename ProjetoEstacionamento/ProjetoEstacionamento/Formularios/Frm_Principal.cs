@@ -18,7 +18,7 @@ namespace ProjetoEstacionamento
             InitializeComponent();
             
             HoraTempoReal();
-            AtualizaGridFrm_Pincipal();
+            
 
             Grp_TabelaPreços.Text = "Tabela de Preços";
             Lbl_1h.Text = "1 Hora: ";
@@ -40,6 +40,17 @@ namespace ProjetoEstacionamento
             Lbl_preco7h.Text = " $40.00 ";
             Lbl_precoDiaria.Text = " $60.00 ";
             Lbl_precoMensal.Text = " $340.00 ";
+
+            Btn_Entrada.Enabled = false;
+            Btn_Saida.Enabled = false;
+            Btn_Registro.Enabled = false;
+            DesconectarToolStripMenuItem.Enabled = false;
+            funcionariosToolStripMenuItem.Enabled = false;
+            ajudaToolStripMenuItem.Enabled = false;
+            relatoriosToolStripMenuItem.Enabled = false;
+            Dg_TodosEstacionados.Enabled = false;
+     
+            
 
         }
 
@@ -68,10 +79,41 @@ namespace ProjetoEstacionamento
             entrada.Show();
         }
 
-        private void loginToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void ConectarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Frm_Login login = new Frm_Login();
-            login.ShowDialog();
+            Frm_Login F = new Frm_Login();
+            F.ShowDialog();
+
+            if (F.DialogResult == DialogResult.OK)
+            {
+                string login = F.login;
+                string senha = F.senha;
+
+                if(ProjetoEstacionamentoBliblioteca.Cls_Uteis.validaSenhaLogin(senha) == true) // Senha "projeto".
+                {
+
+                    Btn_Entrada.Enabled = true;
+                    Btn_Saida.Enabled = true;
+                    Btn_Registro.Enabled = true;
+                    DesconectarToolStripMenuItem.Enabled = true;
+                    ConectarToolStripMenuItem1.Enabled = false;
+                    funcionariosToolStripMenuItem.Enabled = false;
+                    ajudaToolStripMenuItem.Enabled = false;
+                    relatoriosToolStripMenuItem.Enabled = false;
+                    Dg_TodosEstacionados.Enabled = true;
+
+                    AtualizaGridFrm_Pincipal();
+
+                    MessageBox.Show("Bem vindo " + login + " !", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+                else
+                {
+                    MessageBox.Show("Login ou senha invalido!", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+            }
+
         }
 
         private void Btn_Entrada_Click(object sender, EventArgs e)
@@ -85,7 +127,7 @@ namespace ProjetoEstacionamento
 
         }
 
-        private void Btn_Sainda_Click(object sender, EventArgs e)
+        private void Btn_Saida_Click(object sender, EventArgs e)
         {
             
             Frm_Saida saida = new Frm_Saida();
@@ -108,7 +150,7 @@ namespace ProjetoEstacionamento
             cadastrarCliente.ShowDialog();
         }
 
-        private void Lbl_Registro_Click(object sender, EventArgs e)
+        private void Btn_Registro_Click(object sender, EventArgs e)
         {
             Frm_Registros registro = new Frm_Registros();
             registro.ShowDialog();
@@ -162,6 +204,11 @@ namespace ProjetoEstacionamento
             {
                 throw new Exception(Ex.Message);
             }
+        }
+
+        private void DesconectarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
